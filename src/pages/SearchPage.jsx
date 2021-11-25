@@ -1,6 +1,6 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { searchMovie } from '../api/axios.js';
 import CardItem from '../components/CardItem/index.jsx';
 import Spinner from '../components/Spinner/index.jsx';
 
@@ -15,8 +15,8 @@ const SearchPage = (props) => {
     } else {
       const loadSearchResults = async () => {
         try {
-          const { data } = await searchMovie(
-            `?api_key=${process.env.REACT_APP_API_KEY}&query=${searchText}`
+          const { data } = await axios.get(
+            `https://api.themoviedb.org/3/search/movie?query=${searchText}&api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1`
           );
           setIsLoading(true);
           await setResults(data.results);
