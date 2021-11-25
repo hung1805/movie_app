@@ -21,7 +21,7 @@ const Nav = (props) => {
     if (mobileSearch) setMobileSearch(false);
     setSearchText(currentText);
     setCurrentText('');
-    navigate('/search');
+    navigate({ path: '/search', search: `?query=${currentText}` });
   };
   return (
     <nav
