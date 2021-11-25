@@ -6,6 +6,7 @@ import Spinner from '../components/Spinner/index.jsx';
 
 const SearchPage = (props) => {
   const { searchText } = props;
+  console.log(searchText);
   const [results, setResults] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
@@ -30,7 +31,7 @@ const SearchPage = (props) => {
         setResults([]);
       };
     }
-  }, [searchText, navigate]);
+  }, [searchText]);
   return isLoading ? (
     <Spinner />
   ) : (
