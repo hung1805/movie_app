@@ -6,4 +6,5 @@
 👉React Router v6 for routing
 👉Tailwind Css for styling and resposive
 
-Get APi key: https://www.themoviedb.org/
+📝Get APi key: https://www.themoviedb.org/
+📝Footer Link Is Not Available O.O
