@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+.btn {
+  @apply cursor-pointer outline-none px-6 py-3  shadow-md transition duration-300 rounded-md;
+}
+.img {
+  @apply w-full h-full object-cover;
+}
+
+/* SlickSlider */
+.prevBtn {
+  @apply lg:absolute lg:top-0 lg:left-0 lg:z-10 lg:h-full lg:ml-8  lg:flex lg:items-center lg:justify-center;
+}
+.nextBtn {
+  @apply lg:absolute lg:top-0 lg:right-0 lg:z-10 lg:h-full lg:mr-8  lg:flex lg:items-center lg:justify-center;
+}

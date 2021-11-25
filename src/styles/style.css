@@ -1,0 +1,6 @@
+/* Overwrite Slick Slider Btn Css */
+
+.slick-prev:before,
+.slick-next:before {
+  color: red;
+}
